@@ -10,7 +10,7 @@ def printLetterByLetter(string):
     for char in string:
         sys.stdout.write(char)
         sys.stdout.flush()
-        time.sleep(0.05)
+        time.sleep(0.02)
 
 
 #Get the path of the repo folder.
@@ -68,13 +68,24 @@ for file in os.listdir(path):
         Packages.write(SHA256sum + "\n")
         Packages.write(fileName + "\n")
         Packages.close()
-    #os.rename((os.getcwd() + "\\Packages.txt"), (os.getcwd() + "\\Packages"))
     filePathOld = str(os.getcwd() + "\\adddebs\\" + file)
     filePathNew = str(os.getcwd() + "\\debs\\" + file)
     copyfile(filePathOld, filePathNew)
     os.remove(filePathOld)
     success = str("Successfully added " + file + " to your cydia repo!\n")
     printLetterByLetter(success)
+if not "Packages.bz2" in os.listdir(os.getcwd()):
+    if not os.listdir(os.getcwd() + "\\adddebs"):
+        os.system(os.getcwd() + "\\bzip2.exe " + os.getcwd() + "\\Packages")
+        if "Packages.bz2" in os.listdir(os.getcwd()):
+            printLetterByLetter("Successfully compressed \"Packages\" to \"Packages.bz2\".")
+        else:
+            printLetterByLetter("Failed to compress \"Packages\" to \"Packages.bz2\".")
+else:
+    printLetterByLetter("Failed to compress \"Packages\" to \"Packages.bz2\".")
+
+    
+
     
 
 
