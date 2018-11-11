@@ -133,13 +133,13 @@ if not "Packages.bz2" in os.listdir(os.getcwd()):
         #If it does exist, it will say that is successfully compressed it.
         #If it doesn't exist, it will say that it failed to compress it.
         if "Packages.bz2" in os.listdir(os.getcwd()):
-            printLetterByLetter("Successfully compressed \"Packages\" to \"Packages.bz2\".")
+            printLetterByLetter("Successfully compressed \"Packages\" to \"Packages.bz2\".\n")
             time.sleep(1)
         else:
-            printLetterByLetter("Failed to compress \"Packages\" to \"Packages.bz2\".")
+            printLetterByLetter("Failed to compress \"Packages\" to \"Packages.bz2\".\n")
             time.sleep(1)
 else:
-    printLetterByLetter("Failed to compress \"Packages\" to \"Packages.bz2\".")
+    printLetterByLetter("Failed to compress \"Packages\" to \"Packages.bz2\".\n")
     time.sleep(1)
 #This allows it to be automatically stage, commit, and push to Github.
 #NOTE : "git.bat" MUST BE IN THE ROOT OF THE REPO FOLDER FOR THIS TO WORK.
@@ -156,19 +156,19 @@ while end == False:
         #Which will ask for a commit message then automatically stage, commit, and push to Github.
         os.system(os.getcwd() + "\\git.bat")
         #Then it will say that changes were succesfully pushed to Github.
-        printLetterByLetter("Changes have successfully been pushed to Github!")
+        printLetterByLetter("Changes have successfully been pushed to Github!\n")
         time.sleep(1)
         #Sets "end" to True so it doesn't loop.
         end = True
     elif pushOrNot == "N":
         #If the answer was "N", it will say tht it won't push changes yet.
-        printLetterByLetter("Okay. I won't push changes yet.")
+        printLetterByLetter("Okay. I won't push changes yet.\n")
         time.sleep(1)
         #Sets "end" to True so it doesn't loop.
         end = True
     else:
         #If the answer wasn't "Y" or "N", it will say "what did you say?",
-        printLetterByLetter("What did you say?")
+        printLetterByLetter("What did you say?\n")
         #Then it will set "end" to False so that it loops.
         end = False
         
