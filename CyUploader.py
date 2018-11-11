@@ -56,6 +56,7 @@ for file in os.listdir(path):
     with open("Packages", "a") as Packages:
         Packages.write(filler + "\n")
         Packages.write(package + "\n")
+        Packages.write(tweakName + "\n")
         Packages.write(version + "\n")
         Packages.write(size + "\n")
         Packages.write(architecture + "\n")
@@ -79,11 +80,13 @@ if not "Packages.bz2" in os.listdir(os.getcwd()):
         os.system(os.getcwd() + "\\bzip2.exe " + os.getcwd() + "\\Packages")
         if "Packages.bz2" in os.listdir(os.getcwd()):
             printLetterByLetter("Successfully compressed \"Packages\" to \"Packages.bz2\".")
+            time.sleep(1)
         else:
             printLetterByLetter("Failed to compress \"Packages\" to \"Packages.bz2\".")
+            time.sleep(1)
 else:
     printLetterByLetter("Failed to compress \"Packages\" to \"Packages.bz2\".")
-
+    time.sleep(1)
     
 
     
