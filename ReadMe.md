@@ -8,16 +8,27 @@ GITHUB PAGES REPO
 
 -adddebs
 	-Add .deb files to upload here
+
 -debs
 	-Added .deb files go here
+
 -js,images,assets,css, ect. all other webpage attributes
 
 -unpack bzip2 here if u dont already have it(not in a folder, all bzip2 
 files go directly into the root og the github pages repo folder)
 
 -CyUploader.exe
+
 -index.html
+
 -Packages(no file extention)
+
 -Release(no file extention)
 
-now just run CyUploader :)
+-And obviously CyUploader.exe and git.bat
+
+I assume you have already setup a repo if you are going to use this, so the only new thing should be the "adddebs" folder where .deb files to be added will go.
+
+Now just run CyUploader :)
+
+I will complete the comments sometime later :P

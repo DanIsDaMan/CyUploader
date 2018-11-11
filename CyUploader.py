@@ -87,6 +87,24 @@ if not "Packages.bz2" in os.listdir(os.getcwd()):
 else:
     printLetterByLetter("Failed to compress \"Packages\" to \"Packages.bz2\".")
     time.sleep(1)
+end = False
+while end == False:
+    pushOrNot = str(input("Would you like to push changes now?(Y/N)\n"))
+    pushOrNot = pushOrNot.upper()
+    if pushOrNot == "Y":
+        os.system(os.getcwd() + "\\git.bat")
+        printLetterByLetter("Successfully pushed to Github!")
+        time.sleep(1)
+        end = True
+    elif pushOrNot == "N":
+        printLetterByLetter("Okay. I won't push it yet.")
+        time.sleep(1)
+        end = True
+    else:
+        printLetterByLetter("What did you say?")
+        end = False
+        
+        
     
 
     
