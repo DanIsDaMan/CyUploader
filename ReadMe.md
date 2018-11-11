@@ -32,3 +32,11 @@ I assume you have already setup a repo if you are going to use this, so the only
 Now just run CyUploader :)
 
 I will complete the comments sometime later :P
+
+NOTES:
+
+You don't need to type the quotation marks yourself when it asks for a commit message. 
+
+I took care of that for you all :)
+
+The test files need to be in the root for them to work.
