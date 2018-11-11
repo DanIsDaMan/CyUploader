@@ -141,39 +141,6 @@ if not "Packages.bz2" in os.listdir(os.getcwd()):
 else:
     printLetterByLetter("Failed to compress \"Packages\" to \"Packages.bz2\".")
     time.sleep(1)
-#This allows it to be automatically stage, commit, and push to Github.
-#NOTE : "git.bat" MUST BE IN THE ROOT OF THE REPO FOLDER FOR THIS TO WORK.
-#Creates the "end" variable to track if a valid answer was recieved to continue or loop.
-end = False
-while end == False:
-    #Asks whether or not you would like to push changes now.
-    pushOrNot = str(input("Would you like to push changes now?(Y/N)\n"))
-    #Makes the answer uppercase so it will be easier to check.
-    pushOrNot = pushOrNot.upper()
-    #Checks if answer was "Y", "N", or neither of them.
-    if pushOrNot == "Y":
-        #If the answer was "Y", then it will run "git.bat",
-        #Which will ask for a commit message then automatically stage, commit, and push to Github.
-        os.system(os.getcwd() + "\\git.bat")
-        #Then it will say that changes were succesfully pushed to Github.
-        printLetterByLetter("Changes have successfully been pushed to Github!")
-        time.sleep(1)
-        #Sets "end" to True so it doesn't loop.
-        end = True
-    elif pushOrNot == "N":
-        #If the answer was "N", it will say tht it won't push changes yet.
-        printLetterByLetter("Okay. I won't push changes yet.")
-        time.sleep(1)
-        #Sets "end" to True so it doesn't loop.
-        end = True
-    else:
-        #If the answer wasn't "Y" or "N", it will say "what did you say?",
-        printLetterByLetter("What did you say?")
-        #Then it will set "end" to False so that it loops.
-        end = False
-        
-        
-    
 
 
 '''

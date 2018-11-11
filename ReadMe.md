@@ -33,10 +33,12 @@ Now just run CyUploader :)
 
 I will complete the comments sometime later :P
 
+UPDATE : I've added comments now.
+
 NOTES:
 
-You don't need to type the quotation marks yourself when it asks for a commit message. 
+You don't need to type the quotation marks yourself when it asks for a commit message. I took care of that for you all :)
 
-I took care of that for you all :)
+git.bat could easily be used for anytime you need to push anything to Github. Just place it in the root of your Github repo folder.
 
 The test files need to be in the root for them to work.
