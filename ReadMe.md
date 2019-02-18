@@ -6,26 +6,26 @@ It requires a specific layout of folders & files.
 
 GITHUB PAGES REPO
 
--adddebs
-	-Add .deb files to upload here
+- adddebs
+	- Add .deb files to upload here
 
--debs
-	-Added .deb files go here
+- debs
+	- Added .deb files go here
 
--js,images,assets,css, ect. all other webpage attributes
+- js,images,assets,css, ect. all other webpage attributes
 
--unpack bzip2 here if u dont already have it(not in a folder, all bzip2 
-files go directly into the root og the github pages repo folder)
+- unpack bzip2 here if u don't already have it(not in a folder, all bzip2 
+files go directly into the root of the github pages repo folder)
 
--CyUploader.exe
+- CyUploader.exe
 
--index.html
+- index.html
 
--Packages(no file extention)
+- Packages(no file extention)
 
--Release(no file extention)
+- Release(no file extention)
 
--And obviously CyUploader.exe and git.bat
+- And obviously CyUploader.exe and git.bat
 
 I assume you have already setup a repo if you are going to use this, so the only new thing should be the "adddebs" folder where .deb files to be added will go.
 
